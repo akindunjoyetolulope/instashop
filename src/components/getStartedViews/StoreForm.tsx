@@ -6,6 +6,7 @@ import TextField from "../TextField";
 import Button from "../Button";
 import { useOnboarding, useSetOnboarding } from "@/Context";
 import { useRouter } from "next/navigation";
+import { API_URL } from "@/utils/variables";
 
 const schema = Yup.object().shape({
   store_name: Yup.string().required("store name is required"),
@@ -19,6 +20,7 @@ export default function StoreForm() {
   const onboarding = useOnboarding();
   const setOnboarding = useSetOnboarding();
   const router = useRouter();
+  const baseUrl = API_URL;
 
   const {
     handleSubmit,
@@ -45,8 +47,9 @@ export default function StoreForm() {
     setOnboarding((o) => ({ ...o, ...store }));
 
     ("use server");
+
     try {
-      fetch("http://localhost:3000/api", {
+      fetch(baseUrl ?? "http://localhost:3000/api", {
         method: "POST",
         body: JSON.stringify({ ...onboarding, ...store }),
         headers: {
