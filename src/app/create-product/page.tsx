@@ -10,7 +10,7 @@ import Button from "@/components/Button";
 
 export default function CreateProduct() {
   return (
-    <div className="flex min-h-dvh w-full flex-col">
+    <div className="flex h-dvh w-full flex-col">
       <div className="sticky top-0 z-30 bg-[#fff] flex flex-col divide-solid border-b">
         <GoBack label={"Create a product"} url="/" breadcrumb />
         <div className="flex pb-[8px] items-center justify-between px-[16px]">
