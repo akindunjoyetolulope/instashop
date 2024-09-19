@@ -23,7 +23,7 @@ export default function GetStarted() {
   };
 
   return (
-    <div className="h-[100vh] flex flex-col justify-between pb-[16px]">
+    <div className="h-dvh flex flex-col justify-between pb-[16px]">
       <GoBack
         label="Get started"
         url={activeStep === "email" ? "/" : undefined}

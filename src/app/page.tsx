@@ -13,7 +13,7 @@ export default function Welcome() {
   ];
 
   return (
-    <div className="h-[100vh] flex flex-col justify-between pt-[32px] pb-[16px] px-[32px] font-[family-name:var(--font-dm-sans)]">
+    <div className="h-dvh flex flex-col justify-between pt-[32px] pb-[16px] px-[32px] font-[family-name:var(--font-dm-sans)]">
       <div className="mt-[16px]">
         <div className="flex justify-center">
           <Image src={CartIcon} alt="Shopping Sale" />

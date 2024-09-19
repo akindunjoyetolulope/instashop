@@ -11,7 +11,7 @@ import Button from "@/components/Button";
 
 export default function PreviewProduct() {
   return (
-    <div className="flex min-h-dvh w-full flex-col">
+    <div className="flex h-dvh w-full flex-col">
       <div className="sticky top-0 z-30 bg-[#fff] flex flex-col">
         <GoBack label={"Create a product"} url="/create-product" breadcrumb />
       </div>
